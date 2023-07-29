@@ -1,8 +1,8 @@
-# GSoC-23 Work Product
+# GSoC 2023 Work Product
 
-<h1 align="center">Google Summer of Code 2022 <img src="https://media2.giphy.com/media/KB8MHRUq55wjXVwWyl/source.gif" width="50"></h1>
+<h1 align="center">Google Summer of Code 2023 </h1>
 
-<p align="center"><i>A full report on my Google Summer of Code 2022 work with Aossie</i></p>
+<p align="center"><i>A full report on my Google Summer of Code 2023 work with AOSSIE</i></p>
 <p align="center"><i>Project: "Social Street Smart" </i>  👨‍💻</p>
 
 
@@ -11,12 +11,12 @@
   <img src="https://i.imgur.com/fF5RFGo.png" />
 </p>
 
-### GSoC 2022 Report: Social Street Smart
+### GSoC 2023 Report: Social Street Smart
 
 
 #### Summary
 
-This was the fourth year for Social Street Smart. Building upon the work done in the previous year, this year's GSoC tasks were aimed to safeguard users from Malicious URLs and improve their experience. 
+This was the fifth year for Social Street Smart. Building upon the work done in the previous year, this year's GSoC tasks were aimed to integrate the extension with GPT-3 and implement a rating mechanism for websites to improve their experience. 
 
 Here is a quick summary of the work done over this year:
 
@@ -24,36 +24,35 @@ Here is a quick summary of the work done over this year:
   - :white_check_mark: Unit Tests for all Newly Created APIs 
   - 🚀 Deployment through the GitLab Pipeline
 - :sparkles: New Features -
-	-  *Security Header Checker API*.
-	-  *SSL Validator API*.
+	-  *OpenAI GPT-3 API*.
+	-  *Rating mechanism for website*.
 - :bento: Addition of a new front-end where ever needed
 - :bug: Fixing bugs 
 - :rocket: Deployed the Updated Chrome Extension to the Chrome Webstore.
 
-#### [NEW] Security Header Checker 
+#### [NEW] Integration of GPT-3 
 
-Cyberattack incidences have increased significantly as a result of the Internet's connections expanding exponentially. A significant number of links on today's social media platforms are malicious. So to safeguard users from those, I introduced the Security Header Checker API this summer.  It enables the user to lookup for any link and get information about browsing status of that link. A header checker would be beneficial in making sure that our users are as secure as possible from those malicious links.
+The integration of the OpenAI GPT-3 API provides users with a powerful tool to gain deeper insights into specific news articles they wish to verify. To access this functionality, users are required to input their unique API key in the settings page of the Chrome extension. The API key is securely stored in the local storage of the Chrome browser and serves as the input for generating prompts for the GPT-3 model.
 
-#### [NEW] SSL Validator 
+Once the API key is set up, users can generate up to 30 prompts using their authorized API key.The generated responses are displayed to the user, offering valuable insights and analysis regarding the news article in question. 
 
-In today's world of the Internet, SSL certificates help keep user data secure,
-prevent attackers from creating a fake version of the site, verify ownership of the website and provide consumers a sense of security. So I introduced the SSL Validator API this summer. It enables the user to lookup for any link and get information about SSL certificates of that link.
+
 
 #### Unit Testing [ For Newly Created Features ]
 
-I have implemented Unit Testing into the project, that makes it much easier to validate that all the APIs are functioning properly. The tests run in GitLab's CI/CD Pipeline. Pytest was used to run the tests for the APIs.
+I have implemented Unit Testing into the project, that makes it much easier to validate that all the APIs are functioning properly. The tests run in GitLab's CI/CD Pipeline. Unittest was used to run the tests for the APIs.
 
 
 
 #### Running the APIs locally
 
-##### SSL Validator API
+##### GPT3 API
 
-This can be run locally in the same way as they were before GSoC 2022. The steps are as follows
+This can be run locally in the same way as they were before GSoC 2023. The steps are as follows
 
 ```bash
 # Go to the directory of the API
-cd /server/Security-Headers
+cd /server/Context Analysis
 
 # Install all the requirements
 pip install -r requirements.txt
@@ -61,45 +60,40 @@ pip install -r requirements.txt
 # Run the server
 flask run
 ```
-##### Security Header API
+#### How to Get OpenAI API Key
 
-This can also be run locally in the same way as they were before GSoC 2022. The steps are as follows 
+To access the OpenAI API and use services like GPT-3, you need to obtain an API key. Here's how you can get one:
 
-```bash
-# Go to the directory of the API
-cd /server/SSL
+1. Open your web browser and visit the [OpenAI website](https://openai.com/).
 
-# Install all the requirements
-pip install -r requirements.txt
+2. Sign in to your OpenAI account or create a new account if you don't have one.
 
-# Run the server
-flask run
-```
+3. Once logged in, navigate to the API section or developer portal.
 
-For making the API calls, please follow the following format
+4. Look for the option to "Generate API Key" or something similar.
 
-```bash
-For SSL Validator API
-`localhost:5000/ssl/?url=<LINK_FOR_LOOKUP>`
+5. Click on the button to generate a new API key.
 
-For Security Header API
-`localhost:5000/shc/?url=<LINK_FOR_LOOKUP>`
-```
+6. Follow any additional prompts or instructions provided by the OpenAI platform.
 
-The API keys are to be encoded in base64 and passed as a string.
+7. Your API key should be generated and displayed on the screen.
+
+**Important**: Treat your API key as sensitive information, similar to a password. Do not share it publicly or in unencrypted formats, as it grants access to your OpenAI account and services.
+
 
 ##### Unit Testing the APIs
 
-Unit testing for the APIs was done using `pytest` . 
+Unit testing for the APIs was done using `unittest` . 
 To run the tests locally
-
-##### For SSL Validator and Security Headers API
 
 ```bash
 cd /server/<directory_of_the_API>
 pip install -r requirements.txt
-pytest
+python -m unittest test_file.py
 ```
+
+#### [NEW] Implementation of Rating Mechanism
+The rating mechanism allows users to rate the credibility of websites they visit. This data is aggregated to create a credibility score for each website. Users can then be informed about the reliability of the sources they encounter while browsing.
 
 #### Project Links
 - [Download the Extension (Chrome Webstore)](<https://chrome.google.com/webstore/detail/social-street-smart/ddjcjpfkmcgpgpjhlmdenmionhbnpagm?hl=en-GB&authuser=0>)
@@ -115,17 +109,19 @@ pytest
 
 #### Merge Requests
 
-The following merge requests were made to the project during GSoC 2022.
+The following merge requests were made to the project during GSoC 2023.
 
 
 ##### Social Street Smart API Repository
-- [!16 Combined PRs for SSL Validator and Security Header Checker API (Merged)](https://gitlab.com/aossie/social-street-smart-api/-/merge_requests/16)
+- [!19 Addition of GPT-3 API to the API repository](https://gitlab.com/aossie/social-street-smart-api/-/merge_requests/19)
 
 ##### Social Street Smart Repository (Chrome Extension)
-- [!94 Added new UI for Settings Page (Merged)](https://gitlab.com/aossie/social-street-smart/-/merge_requests/94)
-- [!64 SSL Certificate Validator Support (Open)](https://gitlab.com/aossie/social-street-smart/-/issues/64)
-- [!65 Security Header Checker Support (Open)](https://gitlab.com/aossie/social-street-smart/-/issues/65)
-- [!61 SSL Certificate Validator API -Integration and Tests (Merged)](https://gitlab.com/aossie/social-street-smart/-/issues/61)
-- [!62 Security Header Checker API -New API and Deployment (Merged)](https://gitlab.com/aossie/social-street-smart/-/issues/62)
-- [!60 SSL Certificate Validator API -New API and Deployment (Merged)](https://gitlab.com/aossie/social-street-smart/-/issues/60)
-- [!63 Security Header Checker API -Integration and Tests (Merged)](https://gitlab.com/aossie/social-street-smart/-/issues/63)
+- [!111 Combined PR for Addition of Rating Mechanism, GPT-3 functionality, and Upgradation of Gulp Version (Open)](https://gitlab.com/aossie/social-street-smart/-/merge_requests/111)
+  - [Rating and GPT-3 Functionality Added](https://gitlab.com/aossie/social-street-smart/-/commit/20b64c7c54328525d5b0d720cece68467de1bd9b?merge_request_iid=111)
+  - [Added UI for Context analysis](https://gitlab.com/aossie/social-street-smart/-/merge_requests/111/diffs?commit_id=4d2486b4c0fa77041bc5d0632348d7540a1ae2ec)
+  - [Upgraded gulp to v4 and changed functional dependencies](https://gitlab.com/aossie/social-street-smart/-/merge_requests/111/diffs?commit_id=34fd45720e338f2ea443aa222580f5e7588421f0)
+
+
+
+### Future Scope
+- Could enhance extension credibility by implementing a content filtering mechanism with AI-driven credibility scoring, user feedback loop, transparency, and educational resources.
