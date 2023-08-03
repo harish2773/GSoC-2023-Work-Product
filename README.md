@@ -95,6 +95,10 @@ python -m unittest test_file.py
 #### [NEW] Implementation of Rating Mechanism
 The rating mechanism allows users to rate the credibility of websites they visit. This data is aggregated to create a credibility score for each website. Users can then be informed about the reliability of the sources they encounter while browsing.
 
+#### API Endpoints (Serverless Deployment on AWS Lambda)
+
+- Report API : (<https://vsvpgs5rl3.execute-api.us-east-2.amazonaws.com/dev/{proxy+}>)
+
 #### Project Links
 - [Download the Extension (Chrome Webstore)](<https://chrome.google.com/webstore/detail/social-street-smart/ddjcjpfkmcgpgpjhlmdenmionhbnpagm?hl=en-GB&authuser=0>)
 - [Chrome Extension Repository](https://gitlab.com/aossie/social-street-smart)
