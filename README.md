@@ -109,10 +109,7 @@ The rating mechanism allows users to rate the credibility of websites they visit
 - [All API's Repository](https://gitlab.com/aossie/social-street-smart-api)
 
 
-#### Issues 
-- [SSS-Phase 1](https://gitlab.com/aossie/social-street-smart/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=GSoC%202022%20Coding%20Phase%201&first_page_size=20)
-- [SSS -Phase 2](https://gitlab.com/aossie/social-street-smart/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=GSoC%202022%20Coding%20Phase%202&first_page_size=20)
-- [SSS API - Phase 1 ](https://gitlab.com/aossie/social-street-smart-api/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=GSoC%202022%20Coding%20Phase%201&first_page_size=20)
+
 
 
 #### Merge Requests
