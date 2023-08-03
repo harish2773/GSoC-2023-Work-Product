@@ -99,8 +99,8 @@ The rating mechanism allows users to rate the credibility of websites they visit
 
 - Report API : (<https://vsvpgs5rl3.execute-api.us-east-2.amazonaws.com/dev/{proxy+}>)
 - SSL API :
-  	- ANY : <https://q4ri22coa3.execute-api.us-east-1.amazonaws.com/dev/>
-  	- POST : <https://q4ri22coa3.execute-api.us-east-1.amazonaws.com/dev/ssl>
+  	- ANY : (<https://q4ri22coa3.execute-api.us-east-1.amazonaws.com/dev/>)
+  	- POST : (<https://q4ri22coa3.execute-api.us-east-1.amazonaws.com/dev/ssl>)
   
 
 #### Project Links
