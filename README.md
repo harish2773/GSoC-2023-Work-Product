@@ -98,6 +98,10 @@ The rating mechanism allows users to rate the credibility of websites they visit
 #### API Endpoints (Serverless Deployment on AWS Lambda)
 
 - Report API : (<https://vsvpgs5rl3.execute-api.us-east-2.amazonaws.com/dev/{proxy+}>)
+- SSL API :
+  	- ANY : <https://q4ri22coa3.execute-api.us-east-1.amazonaws.com/dev/>
+  	- POST : <https://q4ri22coa3.execute-api.us-east-1.amazonaws.com/dev/ssl>
+  
 
 #### Project Links
 - [Download the Extension (Chrome Webstore)](<https://chrome.google.com/webstore/detail/social-street-smart/ddjcjpfkmcgpgpjhlmdenmionhbnpagm?hl=en-GB&authuser=0>)
