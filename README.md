@@ -111,6 +111,10 @@ The rating mechanism allows users to rate the credibility of websites they visit
   	- ANY : (<https://39rpx1thbf.execute-api.us-east-1.amazonaws.com/dev>)
   	- ANY : (<https://39rpx1thbf.execute-api.us-east-1.amazonaws.com/dev/{proxy+}>)
 
+- Context Analysis API (GPT-3 API) :
+  	- ANY : (<https://gy0sdopqv5.execute-api.us-east-1.amazonaws.com/dev>)
+  	- ANY : (<https://gy0sdopqv5.execute-api.us-east-1.amazonaws.com/dev/{proxy+}>)
+
   
   
 
