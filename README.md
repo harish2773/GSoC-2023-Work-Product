@@ -101,6 +101,10 @@ The rating mechanism allows users to rate the credibility of websites they visit
 - SSL API :
   	- ANY : (<https://q4ri22coa3.execute-api.us-east-1.amazonaws.com/dev/>)
   	- POST : (<https://q4ri22coa3.execute-api.us-east-1.amazonaws.com/dev/ssl>)
+- Security Header API :
+  	- GET : (<https://8ynkqfv6qk.execute-api.us-east-1.amazonaws.com/dev/>)
+  	- POST : (<https://8ynkqfv6qk.execute-api.us-east-1.amazonaws.com/dev/shc>)
+  
   
 
 #### Project Links
