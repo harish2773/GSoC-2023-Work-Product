@@ -120,8 +120,8 @@ The rating mechanism allows users to rate the credibility of websites they visit
 
 #### Project Links
 - [Download the Extension (Chrome Webstore)](<https://chrome.google.com/webstore/detail/social-street-smart/ddjcjpfkmcgpgpjhlmdenmionhbnpagm?hl=en-GB&authuser=0>)
-- [Chrome Extension Repository](https://gitlab.com/aossie/social-street-smart)
-- [All API's Repository](https://gitlab.com/aossie/social-street-smart-api)
+- [Social Street Smart Chrome Extension Repository](https://gitlab.com/aossie/social-street-smart)
+- [Social Street Smart API Repository](https://gitlab.com/aossie/social-street-smart-api)
 
 
 
