@@ -107,6 +107,10 @@ The rating mechanism allows users to rate the credibility of websites they visit
 - Hate Speech API :
 	- ANY : (<https://v7ss9zc1l7.execute-api.us-east-1.amazonaws.com/dev>)
    	- ANY : (<https://v7ss9zc1l7.execute-api.us-east-1.amazonaws.com/dev/{proxy+}>)
+- Disinformation in Images API (ImageAPI) :
+  	- ANY : (<https://39rpx1thbf.execute-api.us-east-1.amazonaws.com/dev>)
+  	- ANY : (<https://39rpx1thbf.execute-api.us-east-1.amazonaws.com/dev/{proxy+}>)
+
   
   
 
