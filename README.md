@@ -104,6 +104,9 @@ The rating mechanism allows users to rate the credibility of websites they visit
 - Security Header API :
   	- GET : (<https://8ynkqfv6qk.execute-api.us-east-1.amazonaws.com/dev/>)
   	- POST : (<https://8ynkqfv6qk.execute-api.us-east-1.amazonaws.com/dev/shc>)
+- Hate Speech API :
+	- ANY : (<https://v7ss9zc1l7.execute-api.us-east-1.amazonaws.com/dev>)
+   	- ANY : (<https://v7ss9zc1l7.execute-api.us-east-1.amazonaws.com/dev/{proxy+}>)
   
   
 
