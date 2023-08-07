@@ -93,7 +93,7 @@ python -m unittest test_file.py
 ```
 
 #### [NEW] Implementation of Rating Mechanism
-The rating mechanism allows users to rate the credibility of websites they visit. This data is aggregated to create a credibility score for each website. Users can then be informed about the reliability of the sources they encounter while browsing.
+The rating mechanism empowers users to provide credibility ratings for websites they visit. These ratings are collected and combined to generate a credibility score for each website. By utilizing this system, users gain valuable insights into the reliability of the sources they encounter during their browsing activities. This information enables users to make more informed decisions about the credibility of the content they consume and the websites they trust. The aggregation of user ratings helps create a collective understanding of website trustworthiness
 
 ### API Endpoints (Serverless Deployment on AWS Lambda)
 
