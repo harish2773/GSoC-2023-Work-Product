@@ -115,6 +115,10 @@ The rating mechanism empowers users to provide credibility ratings for websites 
   	- ANY : (<https://gy0sdopqv5.execute-api.us-east-1.amazonaws.com/dev>)
   	- ANY : (<https://gy0sdopqv5.execute-api.us-east-1.amazonaws.com/dev/{proxy+}>)
 
+- Click Bait API :
+  	- ANY : (<https://gpx2itno4d.execute-api.us-east-1.amazonaws.com/dev>)
+  	- ANY : (<https://gpx2itno4d.execute-api.us-east-1.amazonaws.com/dev/{proxy+}>)
+
   
   
 
