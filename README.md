@@ -13,6 +13,9 @@
 
 ### GSoC 2023 Report: Social Street Smart
 
+#### Motive for the project
+
+With the advent of Internet, the problems faced by the people have also grown. These include abusive languages, fake news articles, click-baits, malicious websites and security attacks. Fake news has become increasingly prevalent over the last few years. Fake news's adverse effect can be seen more and more as people’s reach to social media and to the internet is been increasing.
 
 #### Summary
 
