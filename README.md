@@ -122,6 +122,10 @@ The rating mechanism empowers users to provide credibility ratings for websites 
   	- ANY : (<https://gpx2itno4d.execute-api.us-east-1.amazonaws.com/dev>)
   	- ANY : (<https://gpx2itno4d.execute-api.us-east-1.amazonaws.com/dev/{proxy+}>)
 
+- Fake News API :
+  	- ANY : (<https://tmi1r2xgxa.execute-api.us-east-2.amazonaws.com/dev>)
+  	- ANY : (<https://tmi1r2xgxa.execute-api.us-east-2.amazonaws.com/dev/{proxy+}>)
+
   
   
 
